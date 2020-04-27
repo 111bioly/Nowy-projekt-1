@@ -33,14 +33,17 @@ html {
 
 @media (max-width: 575px) {
   .navigation li {
-    
+    border-bottom: 2px solid #fbfcfa;
     display: flex;
+    padding: 2px;
+    margin-top: 3px;
   }
 }
 
 @media (max-width: 575px) {
   .navigation {
     float: left;
+    padding-bottom: 5px;
   }
 }
 
@@ -51,9 +54,28 @@ html {
   }
 }
 
+@media (min-width: 576px) {
+  .navigation li {
+    margin-top: 4px;
+    border-bottom: 2px solid #fbfcfa;
+  }
+}
+
+@media (min-width: 576px) {
+  .navigation {
+    padding-top: 30px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation li {
+    border-bottom: none;
   }
 }
 
@@ -66,6 +88,7 @@ html {
 @media (min-width: 768px) {
   .navigation {
     float: right;
+    padding-top: 40px;
   }
 }
 

@@ -24,9 +24,7 @@ nav {
 
 .navigation {
   margin: 0;
-  padding-top: 40px;
   list-style-type: none;
-  color: #ffffff;
 }
 
 .navigation li {
@@ -34,13 +32,13 @@ nav {
 }
 
 .navigation li a {
-  color: #ffffff;
   text-decoration: none;
   display: block;
+  color: #ffffff;
 }
 
-.navigation li:hover {
-  color: #33d9b2;
+.navigation li a:hover {
+  color: #ffd700;
 }
 
 .logo {
@@ -49,6 +47,10 @@ nav {
   color: #ffd700;
   text-decoration: none;
   text-shadow: 6px  2px 1px #000000;
+}
+
+.logo-one {
+  padding-top: 40px;
 }
 
 .navigation-inner {

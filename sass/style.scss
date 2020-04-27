@@ -26,34 +26,33 @@ header  {
     display: flex;
 }
 nav{
-    
     margin-left: auto;
     margin-right: auto;  
 }
 .navigation{
     margin: 0;
-    padding-top: 40px;
     list-style-type: none;
-    color: $color-four;
-    
     li{
         padding-right: 40px;
         a{
-           color: $color-four; 
-           text-decoration: none;
-           display: block;
+            text-decoration: none;
+            display: block;
+            color: $color-four;
+            &:hover{
+                color: $color-six;
+            }
         }
-        &:hover{
-            color: $color-two
-        }
-    }
-  }
+    }    
+}
 .logo{
     font-family: $font-nav;
     font-size: 40px;
     color: $color-six;
     text-decoration: none;
     text-shadow: 6px  2px 1px #000000;
+}
+.logo-one{
+    padding-top: 40px;
 }
 
 .navigation-inner {
