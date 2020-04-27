@@ -23,16 +23,49 @@ html {
   margin-left: auto;
   
 }
+ 
+@media (max-width: 575px) {
+  .container {
+    max-width: 340px;
+    text-align: center;
+  }
+}
 
-@media (min-width: 576px) {
+@media (max-width: 575px) {
+  .navigation li {
+    
+    display: flex;
+  }
+}
+
+@media (max-width: 575px) {
+  .navigation {
+    float: left;
+  }
+}
+
+@media (min-width: 575px) {
   .container {
     max-width: 540px;
+    text-align: center;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation li {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    float: right;
   }
 }
 

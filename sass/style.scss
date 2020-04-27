@@ -26,7 +26,7 @@ header  {
     display: flex;
 }
 nav{
-    width: 1000px;
+    
     margin-left: auto;
     margin-right: auto;  
 }
@@ -34,10 +34,9 @@ nav{
     margin: 0;
     padding-top: 40px;
     list-style-type: none;
-    float: right;
     color: $color-four;
+    
     li{
-        display: inline-block;
         padding-right: 40px;
         a{
            color: $color-four; 
@@ -48,12 +47,7 @@ nav{
             color: $color-two
         }
     }
-}
-
-
-.logo-one{
-    padding-top: 40px;
-}
+  }
 .logo{
     font-family: $font-nav;
     font-size: 40px;
@@ -142,7 +136,7 @@ p{
         max-width: 100%;
     }
 }
-.col-3{
+.pt-4{
     text-align: center;
     border-width: 3px;
     border-style: solid;
@@ -174,6 +168,11 @@ p{
                     width: 100%;
                     height: 280px;
                     object-fit: cover;
+                    transition: transform .2s;
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: transform .2s;
+                    }
                 }
             }
         }
@@ -183,26 +182,35 @@ p{
 footer{
     text-align: center;
     width: 100%;
-    padding: 48px 0;
-    .social-media{
-        margin: 0 auto;
-        display: flex;
-        list-style-type: none;
-        justify-content: left;
-        li{
-            font-size: 0;
-            padding-right: 10px;
-            i{
-                font-size: 30px;
-                color: $color-four;
-                width: 60px;
-                height: 60px;
-                line-height: 60px;   
-                border-radius: 50%;
-                text-align: center;   
-                transition: transform .2s; 
-                background-color: $color-seven;
+    padding: 45px;
+    .social-item{
+        align-self: center;
+        padding: 0;
+        .social-media{
+            margin: 0 auto;
+            padding: 15px;
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            li{
+                font-size: 0;
+                padding-right: 10px;
+                i{
+                    font-size: 30px;
+                    color: $color-four;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;   
+                    border-radius: 50%;
+                    text-align: center;   
+                    transition: transform .2s; 
+                    background-color: $color-seven;
+                    &:hover{
+                        transform: scale(1.5);
+                        transition: transform .2s;
+                    }
+                }
             }
         }
-    }
+    } 
 }
